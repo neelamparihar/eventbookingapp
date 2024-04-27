@@ -10,7 +10,9 @@ import Swimmingpool from "./components/Swimmingpool";
 import Park from "./components/Park";
 import Boatclub from "./components/Boatclub";
 import Cafeteria from "./components/Cafeteria";
-
+import axios from "axios";
+axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
+axios.defaults.withCredentials = true;
 function App() {
   return (
     <>

@@ -22,10 +22,7 @@ const Home = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(
-        "http://localhost:8080/submit-form",
-        formData
-      );
+      const response = await axios.post("/submit-form", formData);
 
       console.log(response.data); // Log the response from the server
       // Optionally, you can display a success message or redirect the user after successful form submission

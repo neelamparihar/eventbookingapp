@@ -28,12 +28,7 @@ app.use(cors());
 app.use(express.json());
 app.use(morgan("dev"));
 
-// Routes
-app.get("/", (req, res) => {
-  res.send("<h1>Welcome to event-booking app</h1>");
-});
-
-app.post("/submit-form", async (req, res) => {
+app.post("/api/submit-form", async (req, res) => {
   try {
     const { name, email, message } = req.body;
     const formData = new Form({
