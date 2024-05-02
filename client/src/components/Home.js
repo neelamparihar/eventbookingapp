@@ -6,7 +6,7 @@ import dining from "../assets/dining.jpg";
 import games from "../assets/games.jpg";
 import resort4 from "../assets/resort4.jpg";
 import sunset1 from "../assets/sunset1.jpg";
-import axios from "axios";
+import axios from "../axiosInstance";
 const Home = () => {
   const [formData, setFormData] = useState({
     name: "",

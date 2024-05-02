@@ -10,8 +10,8 @@ import Swimmingpool from "./components/Swimmingpool";
 import Park from "./components/Park";
 import Boatclub from "./components/Boatclub";
 import Cafeteria from "./components/Cafeteria";
-import axios from "axios";
-axios.defaults.baseURL = process.env.REACT_APP_API_BASE_URL;
+// eslint-disable-next-line no-unused-vars
+import axiosInstance from "./axiosInstance";
 function App() {
   return (
     <>
